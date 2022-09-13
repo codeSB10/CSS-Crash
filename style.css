@@ -1,0 +1,253 @@
+h1 {
+  color: red;
+  opacity: 0.9;
+  text-align: center;
+  background-color: rgba(0, 100, 240, 0.8);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  word-spacing: 0.15em;
+  font-weight: 900;
+}
+.clr{
+    clear: both;
+}
+a{
+    text-decoration: none;
+    color: blueviolet;
+}
+a:hover{
+    color: blue;
+}
+a:active{
+    color: red;
+}
+.Ep {
+    background-color: aquamarine;
+    margin: 20px 30px;
+    border-width: 0.2em;
+    border-style: solid;
+    padding: 5px 5px 10px 10px;
+}
+.Ep h2 {
+  text-align: center;
+  text-decoration: underline;
+  color: purple;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.Ep small {
+  font-style: oblique;
+  color: brown;
+}
+.Ev {
+  float: left;
+  width: 33.3%;
+  border: 1px solid rgb(13, 0, 0);
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: roboto, sans-serif;
+}
+.Ev h3 {
+  text-align: center;
+  color: #00a;
+}
+#Li1 {
+    margin: 20px 5px;
+    border: 1px dotted #f00;
+    padding: 10px;
+    border-radius: 20px;
+}
+#Li1 h2 {
+    text-align: center;
+}
+#Li1 ul{
+    padding: auto;
+    list-style: square;
+}
+#Li1 li{
+    padding-bottom: 5px;
+    border-bottom: dashed 1px #999;
+    color: aquamarine;
+    list-style-image: url(/Images/checkmark.png);
+}
+.form1{
+    border: double #000;
+    margin: 30px;
+    padding: 20px;
+}
+.form1 p{
+    text-align: left;
+    color: palevioletred;
+    text-decoration: underline;
+    font-weight: 600;
+}
+.f1{
+    padding: 10px;
+}
+.form1 label{
+    display: block;
+}
+.form1 input[type="text"], .form1 textarea  {
+    padding: 5px;
+    width: 100%;
+}
+.form1 input[type="submit"]{
+    padding: 10px 15px;
+    background-color: rgb(164, 62, 147);
+    border: none;
+}
+.form1 input[type="submit"]:hover{
+    color: greenyellow;
+    cursor:grab;
+}
+.art{
+    border: 2px dashed;
+    float: left;
+    width: 70%;
+    padding: 10px 5px;
+    box-sizing: border-box;
+}
+.side{
+    border: 1px dotted;
+    float: right;
+    max-width: 28%;
+    padding: 2px 5px;
+    box-sizing: border-box;
+    background-color: #00859f;
+}
+.side h4{
+    background-color: #070;
+}
+.side p{
+    background-color: rgba(200,0,0,0.4);
+}
+.box1{
+    margin: 10px;
+    border: double navy thick;
+    padding: 20px;
+    background-image: url(/Images/bg1.jpg);
+    background-position: top right;
+    background-repeat: repeat-y;
+    background-attachment:scroll;
+    background-origin:padding-box;
+}
+.box1 p{
+    text-align: left;
+    max-width: 150px;
+    color: #00f;
+    text-shadow: 0 0 3px blueviolet, 3px 3px 1px pink;
+}
+.box2{
+    border: ridge gray thick;
+    padding: 10px;
+    position: relative;
+    top: 30px;
+    margin-bottom: 50px;
+}
+.psc span:first-child {
+    color: #fea30a;
+}
+.psc li:nth-child(odd){
+    color: orangered;
+}
+.psc ol li:last-child {
+    background: orangered;
+}
+.psc h3, ul, ol {
+    width: 5%;
+    margin: auto;
+}
+.box2 footer {
+    background-color: aliceblue;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}.link{
+    border: 1px solid;
+    background-color: lightcyan;
+    position: fixed;
+    top: 400px;
+    left: 0;
+}
+.flex-container{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #bbb;
+    border: solid #333 medium;
+    min-height: 700px;
+    justify-content: space-around;
+    align-items: center;
+}
+.flex-container > div {
+    background-color: #00859f;
+    color: #400;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    width: 40vw;
+    min-height: 160px;
+    box-sizing: border-box;
+}
+@media screen and (max-width:800px) {
+    .flex-container{
+        display: inline-flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #9bb;
+        font-size: smaller;
+    }
+    .flex-container >div{
+        background-color: #411;
+        opacity: 0.9;
+        color: #999;
+        min-height: 20vh;
+    }
+}
+.iframe{
+    width: 100%;
+    height: 90vh;
+    border: 2px solid #222;
+    margin: 10px 0;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.ImG{
+    border: 2px solid #555;
+    box-sizing: border-box;
+    width: 100%;
+    height: 95vh;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-around;
+    align-items: center;
+}
+.ImG > div{
+    flex-basis: 40%;
+    height: 43vh;
+    border: solid 1px #333;
+    margin: 10px;
+} 
+.ImG div img{
+    width: 100%;
+    height: 80%;
+}
+.ImG >div:hover {
+    border: solid 3px #106;
+}
+.desc {
+    text-align: center;
+    padding: 15px;
+}
+@media only screen and (max-width: 800px) {
+  .ImG {
+    flex-flow: column nowrap;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    justify-content: flex-start;
+  }  
+  .ImG > div {
+    width: 98%;
+    box-sizing: border-box;
+  }
+} 
