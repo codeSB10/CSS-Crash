@@ -125,7 +125,7 @@ a:active{
     margin: 10px;
     border: double navy thick;
     padding: 20px;
-    background-image: url(/Images/bg1.jpg);
+    background-image: url(Images/bg1.jpg);
     background-position: top right;
     background-repeat: repeat-y;
     background-attachment:scroll;
@@ -175,8 +175,14 @@ a:active{
     background-color: #bbb;
     border: solid #333 medium;
     min-height: 700px;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
+}
+.flex-container .heading{
+    width: 100%;
+    background-color: #09f;
+    text-align: center;
+    color: rgb(211, 249, 19);
 }
 .flex-container > div {
     background-color: #00859f;
@@ -195,6 +201,7 @@ a:active{
         width: 100%;
         background-color: #9bb;
         font-size: smaller;
+        align-items: center;
     }
     .flex-container >div{
         background-color: #411;
@@ -251,3 +258,95 @@ a:active{
     box-sizing: border-box;
   }
 } 
+table{
+    margin: 20px;
+    width: 90%;
+}
+th{
+    padding: 5px;
+    font-size: 1.2em;
+    color: red;
+}
+td{
+    text-align: center;
+    padding: 5px;
+    color: #20f;
+}
+.tbl1 table, .tbl1 th, .tbl1 td {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    background-color: rgba(200, 255, 0, 0.7);
+}
+.tbl1{
+    counter-reset: SN;
+}
+.sn::before{
+    counter-increment: SN;
+    content: counter(SN) ".";
+}
+caption{
+    font-size: large;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 5px;
+}
+.tbl2 table{
+    border-collapse: collapse;
+}
+.tbl2 th, .tbl2 td{
+    border-bottom: 1.8px solid #666;
+}
+.tbl2 td:nth-child(even){
+    background-color: #aaa;
+}
+.tbl2 td:nth-child(odd) {
+    background-color: #ccc;
+}
+.tbl2 th{
+    background-color: #0a9;
+}
+.grid-container{
+    display: grid;
+    margin: 60px 0;
+    border: 2px solid #444;
+    padding: 15px;
+    grid-template-columns: auto auto auto;
+    gap: 5px;
+    background-color: #006;
+    color: #fa3;
+    min-height: 80vh;
+    justify-content: space-evenly;
+    align-content: space-around;
+}
+.grid-container h2{
+    grid-area: 1/1/2/4;
+    text-align: center;
+    background-color: #0a9;
+    color: #f10;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    padding: 5px;
+}
+.gi{
+    background-color: #935;
+    padding: 20px;
+    border: 1px solid #975;
+    min-height: 25vh;
+    text-align: center;
+}
+@media only screen and (max-width: 800px) {
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: stretch;
+    }
+    .grid-container h2{
+        grid-area: 1/1/2/2;
+    }
+    .gi{
+        box-sizing: border-box;
+        width: 100%;
+        min-height: 12vh;
+    }
+}
